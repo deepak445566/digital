@@ -37,9 +37,9 @@ function Navbar({ isHomePage = false }) {
     
     { 
       title: 'CARRERS', 
-      number: '03',
+      number: '02',
       navColor: 'from-green-500 to-emerald-400',
-      href: '/careers'
+      href: '/projects'
     },
     servicesData,
   ];
