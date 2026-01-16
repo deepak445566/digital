@@ -1,0 +1,10 @@
+@import "tailwindcss";
+*{
+  box-sizing: border-box;
+}
+.big-shoulders-<uniquifier> {
+  font-family: "Big Shoulders", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
