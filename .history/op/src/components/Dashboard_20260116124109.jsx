@@ -136,7 +136,7 @@ const Dashboard = ({ onLogout }) => {
   const toggleJobStatus = async (id, currentStatus) => {
     try {
       const token = localStorage.getItem('token');
-      await axios.put(`https://digital-sdsa.onrender.com/api/jobs/${id}`, 
+      await axios.put(`http://localhost:5000/api/jobs/${id}`, 
         { isActive: !currentStatus },
         { headers: { 'x-auth-token': token } }
       );
