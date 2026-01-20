@@ -333,11 +333,7 @@ function Navbar({ isHomePage = false }) {
                     onMouseEnter={() => item.hasDropdown && handleMouseEnter(item.title)}
                     onMouseLeave={handleMouseLeave}
                   >
-                    <a 
-                      href={item.href} 
-                      className={`text-gray-300 font-medium tracking-wide hover:text-white magnet transition-colors duration-300 bg-[#383838] px-5 py-2 rounded-full ${item.title === 'HOME' ? 'text-white' : ''} inline-flex items-center justify-center min-w-[100px]`}
-                      onClick={(e) => handleDesktopServicesClick(e, item)}
-                    >
+                   
                       <span className="text-center">
                         {item.title}
                         {item.hasDropdown && (

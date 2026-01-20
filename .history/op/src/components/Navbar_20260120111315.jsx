@@ -335,7 +335,11 @@ function Navbar({ isHomePage = false }) {
                   >
                     <a 
                       href={item.href} 
-                      className={`text-gray-300 font-medium tracking-wide hover:text-white magnet transition-colors duration-300 bg-[#383838] px-5 py-2 rounded-full ${item.title === 'HOME' ? 'text-white' : ''} inline-flex items-center justify-center min-w-[100px]`}
+                      className={`font-medium tracking-wide transition-colors duration-300 px-5 py-2 rounded-full inline-flex items-center justify-center min-w-[100px] magnet ${
+                        isCurrentlyHomePage && !isScrolled 
+                          ? 'text-gray-300 hover:text-white bg-[#383838]/80 hover:bg-[#383838]' 
+                          : 'text-white bg-[#383838] hover:bg-[#444444]'
+                      }`}
                       onClick={(e) => handleDesktopServicesClick(e, item)}
                     >
                       <span className="text-center">
