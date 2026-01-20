@@ -43,7 +43,7 @@ const ServiceDetail = () => {
     window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
     setShowWhatsAppOptions(false);
   };
-
+handleWhatsAppClick
   const handleWhatsAppWeb = () => {
     window.open(`https://web.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(whatsappMessage)}`, '_blank');
     setShowWhatsAppOptions(false);
@@ -212,7 +212,7 @@ const ServiceDetail = () => {
                 {/* WhatsApp Button with Dropdown */}
                 <div className="relative flex-1">
                   <button 
-                  
+                    onClick={handleWhatsAppClick}
                     className="w-full px-4 py-3.5 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-bold rounded-xl hover:from-green-600 hover:to-emerald-700 transition-all duration-300 active:scale-95 shadow-lg flex items-center justify-center space-x-2 group"
                   >
                     <svg className="w-5 h-5 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
